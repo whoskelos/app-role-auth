@@ -1,0 +1,45 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "Kelvin Guerrero",
+      "password": "Clave$123",
+      "email": "kelviin12@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "kelvin",
+      "name": "Kelvin Guerrero",
+      "password": "Clave$123",
+      "email": "kelviin12@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isActive": true
+    },
+    {
+      "id": "miguel",
+      "name": "Miguel Mite",
+      "password": "Clave$123",
+      "email": "kelviin12@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isActive": true
+    }
+  ],
+  "role": [
+    {
+      "id": "admin",
+      "name": "Admin"
+    },
+    {
+      "id": "user",
+      "name": "User"
+    },
+    {
+      "id": "manager",
+      "name": "Manager"
+    }
+  ]
+}

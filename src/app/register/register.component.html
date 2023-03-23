@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-6 col-md-12 d-flex flex-column">
+        <div class="card bg-secondary mb-3">
+            <div class="card-header">Register form</div>
+            <div class="card-body">
+                <form data-bitwarden-watching="1" [formGroup]="registerForm" (ngSubmit)="proceedRegistration()">
+                    <fieldset>
+                        <legend>Register</legend>
+                        <!--Username-->
+                        <div class="form-group">
+                            <label for="idUserName" class="form-label mt-4">Username</label>
+                            <input type="text" class="form-control" id="idUserName" placeholder="Enter username"
+                                formControlName="id">
+                        </div>
+                        <!--Full name-->
+                        <div class="form-group">
+                            <label for="name" class="form-label mt-4">Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name"
+                                formControlName="name">
+                        </div>
+                        <!--Email address-->
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <!--Password-->
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password" formControlName="password">
+                        </div>
+                        <!--Gender-->
+                        <div class="form-group">
+                            <label class="form-label mt-4">Gender</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" formControlName="gender" id="male" value="male">
+                                <label class="form-check-label" for="male">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" formControlName="gender" id="female"
+                                    value="female">
+                                <label class="form-check-label" for="female">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="mt-3">
+                        <button class="btn btn-primary me-2">Register</button>
+                        <a routerLink="/login" class="btn btn-info" role="button">Back to Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

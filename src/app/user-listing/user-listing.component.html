@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col">
+        <table class="table table-stripped">
+            <thead>
+                <tr class="table-light">
+                    <th scope="col">Username</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-default" *ngFor="let user of userList">
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.role === '' ? 'Un Assigned' : user.role }}</td>
+                    <td>{{ user.isActive ? 'Active' : 'In active' }}</td>
+                    <td> <a (click)="updateUser(user.id)" class="btn btn-success btn-sm" role="button">Update</a> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
